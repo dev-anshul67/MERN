@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        /* (*) universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+
+        }
+        .box{
+            background-color: blue;
+            padding: 20px;
+            margin: 20px;
+            height: 100px;
+            padding: 50px 20px 10px 20px;
+        }
+        .inside_box{
+            background-color: yellow;
+            height: 50px;
+            /* width: 120px; */
+            margin: auto;
+            padding: 150px 10px 10px 10px;
+        }
+        .inside_box2{
+            background-color: green;
+            height: 100px;
+            margin: auto;
+            padding: 100px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inside_box">
+            <div class="inside_box2"></div>
+        </div>
+    </div>
+</body>
+</html>
