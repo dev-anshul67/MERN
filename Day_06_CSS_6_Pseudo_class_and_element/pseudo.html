@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Pseudo Class And Element</title>
+    <style>
+        .container {
+            background-color: rgb(73, 32, 151);
+        }
+
+        /* div :first-child{
+            color: blue;
+        }
+        div :last-child{
+            color: yellow;
+        } */
+        div :nth-child(2n) {
+            color: blue;
+        }
+
+        p:empty {
+            border: 2px solid black;
+        }
+
+        p:hover {
+            color: darkgreen;
+        }
+        input:read-only{
+            background-color:grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">Hello</div>
+    <br>
+    <p></p>
+    <div>
+        <li>Anshul</li>
+        <li>Ankit</li>
+        <li>Pawan</li>
+        <li>Aman</li>
+        <li>Diggy</li>
+    </div>
+    <p></p>
+    <br>
+    <div>
+        <li>Hii</li>
+        <li>Hey</li>
+        <li>Bye</li>
+        <li>GoodBye</li>
+        <li>TaTa</li>
+        <li>Horn Please</li>
+    </div>
+    <p></p>
+    <br>
+    <form>
+        <label>Name :</label>
+        <input type="text" value="HE WHO REMAINS" readonly>
+        <br>
+        <label>Number :</label>
+        <input type="number" value="8109719367" readonly>
+        <br>
+        <label>Email :</label>
+        <input type="email">
+        <br>
+        <label>Password :</label>
+        <input type="password">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
